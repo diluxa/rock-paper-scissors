@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto&display=swap" rel="stylesheet"> 
+
+    <!-- assets/styles/ -->
+    <link rel="stylesheet" href="assets/styles/reset.css">
+        <!-- assets/styles/container -->
+        <link rel="stylesheet" href="assets/styles/container/container.css">
+            <!-- assets/styles/container/00-cabecalho -->
+            <link rel="stylesheet" href="assets/styles/container/00-cabecalho/cabecalho.css">
+            <link rel="stylesheet" href="assets/styles/container/00-cabecalho/cabecalho-titulo.css">
+            <!-- assets/styles/container/01-quadro -->
+            <link rel="stylesheet" href="assets/styles/container/01-quadro/quadro.css">
+                <!-- assets/styles/container/01-quadro/00-placar -->
+                <link rel="stylesheet" href="assets/styles/container/01-quadro/00-placar/placar.css">
+                <link rel="stylesheet" href="assets/styles/container/01-quadro/00-placar/placar-titulo.css">
+                <link rel="stylesheet" href="assets/styles/container/01-quadro/00-placar/placar-humano.css">
+                <link rel="stylesheet" href="assets/styles/container/01-quadro/00-placar/placar-maquina.css">
+
+                <!-- assets/styles/container/01-quadro/01-cartoes -->
+                <link rel="stylesheet" href="assets/styles/container/01-quadro/01-cartoes/cartoes.css">
+                <link rel="stylesheet" href="assets/styles/container/01-quadro/01-cartoes/avatar.css">
+                <link rel="stylesheet" href="assets/styles/container/01-quadro/01-cartoes/cartao.css">
+                <link rel="stylesheet" href="assets/styles/container/01-quadro/01-cartoes/icone-direitos.css">
+
+                    <!-- assets/styles/container/01-quadro/01-cartoes/00-maquina -->
+                    <link rel="stylesheet" href="assets/styles/container/01-quadro/01-cartoes/00-maquina/maquina-img.css">
+                    <link rel="stylesheet" href="assets/styles/container/01-quadro/01-cartoes/00-maquina/maquina-escolha.css">
+
+                    <!-- assets/styles/container/01-quadro/01-cartoes/01-versus -->
+                    <link rel="stylesheet" href="assets/styles/container/01-quadro/01-cartoes/01-versus/versus.css">
+                    <!-- assets/styles/container/01-quadro/01-cartoes/02-jogador -->
+                    <link rel="stylesheet" href="assets/styles/container/01-quadro/01-cartoes/02-jogador/jogador-quadro.css">
+                    <link rel="stylesheet" href="assets/styles/container/01-quadro/01-cartoes/02-jogador/jogador-img.css">
+                
+                    <!-- assets/styles/container/01-quadro/02-legenda -->
+                    <link rel="stylesheet" href="assets/styles/container/01-quadro/02-legenda/legenda.css">
+
+
+    <link rel="stylesheet" href="assets/styles/rascunho.css">
+    <title>Pedra Papel Tesoura</title>
+</head>
+<body>
+    <div class="container"><!-- CONTAINER/../ -->
+        <header class="cabecalho"><!-- 00-CABECALHO/ -->
+            <h1 class="cabecalho__titulo">Pedra • Papel • Tesoura</h1>
+        </header>
+        <div class="quadro"><!-- 01-QUADRO/../ -->
+            <div class="placar"><!-- 00-PLACAR/ -->
+                <h2 class="placar__titulo">
+                    <span class="placar__pontos-0">0</span>:<span class="placar__pontos-1">0</span>
+                </h2>
+                <p class="placar__humano">humano</p>
+                <p class="placar__maquina">maquina</p>
+            </div>
+            <div class="cartoes"><!-- 01-CARTOES/.. -->
+                <div class="maquina"><!-- 00-MAQUINA/ -->
+                    <div class="maquina__img avatar"></div>
+                    <div class="icone__direitos">
+                        Icons made by 
+                        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+                            Freepik
+                        </a> 
+                        from 
+                        <a href="https://www.flaticon.com/" title="Flaticon">
+                            www.flaticon.com
+                        </a>
+                    </div>
+                    <div class="maquina__escolha cartao"></div>
+                </div> 
+                <div class="versus"><!-- 01-VERSUS/ -->
+                    <p class="versus__paragrafo">VS</p>
+                </div>
+                <div class="jogador"><!-- 02-JOGADOR/ -->
+                    <div class="jogador__quadro">
+                        <img class="cartao pedra" src="assets/images/pedra.jpg" alt="">
+                        <img class="cartao papel" src="assets/images/papel.jpg" alt="">
+                        <img class="cartao tesoura" src="assets/images/tesoura.jpg" alt="">
+                    </div>
+                    <div class="jogador__img avatar"></div>
+                    <div class="icone__direitos">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                </div>
+            </div>
+            <div class="legenda"><!-- 02-LEGENDA -->
+                <h2 class="legenda__titulo"> • Faça sua escolha • </h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

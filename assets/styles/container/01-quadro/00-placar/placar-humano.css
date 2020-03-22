@@ -1,0 +1,13 @@
+.placar__humano {
+    color: #fffcf9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-70%, 40%);
+    background-color: lightcoral;
+    border: 1px dashed rgb(190, 101, 101);
+    padding: 2px;
+    font-size: .8rem;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 0px 0px rgba(119, 63, 63, 0.9);
+}

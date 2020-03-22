@@ -1,0 +1,10 @@
+.icone__direitos {
+    font-size: 0.6rem;
+    text-align: center;
+    margin: 3px 0;
+    color: #252422;
+}
+.icone__direitos a {
+    text-decoration: none;
+    color: #c24d1f;
+}
