@@ -16,6 +16,10 @@
             <link rel="stylesheet" href="assets/styles/container/00-cabecalho/cabecalho-titulo.css">
             <!-- assets/styles/container/01-quadro -->
             <link rel="stylesheet" href="assets/styles/container/01-quadro/quadro.css">
+                <!-- assets/styles/container/01-quadro/modal -->
+                <link rel="stylesheet" href="assets/styles/container/01-quadro/modal/modal.css">
+                <link rel="stylesheet" href="assets/styles/container/01-quadro/modal/modal-titulo.css">
+                <link rel="stylesheet" href="assets/styles/container/01-quadro/modal/modal-botao.css">
                 <!-- assets/styles/container/01-quadro/00-placar -->
                 <link rel="stylesheet" href="assets/styles/container/01-quadro/00-placar/placar.css">
                 <link rel="stylesheet" href="assets/styles/container/01-quadro/00-placar/placar-titulo.css">
@@ -37,6 +41,9 @@
                     <!-- assets/styles/container/01-quadro/01-cartoes/02-jogador -->
                     <link rel="stylesheet" href="assets/styles/container/01-quadro/01-cartoes/02-jogador/jogador-quadro.css">
                     <link rel="stylesheet" href="assets/styles/container/01-quadro/01-cartoes/02-jogador/jogador-img.css">
+                    <link rel="stylesheet" href="assets/styles/container/01-quadro/01-cartoes/02-jogador/pedra.css">
+                    <link rel="stylesheet" href="assets/styles/container/01-quadro/01-cartoes/02-jogador/papel.css">
+                    <link rel="stylesheet" href="assets/styles/container/01-quadro/01-cartoes/02-jogador/tesoura.css">
                 
                     <!-- assets/styles/container/01-quadro/02-legenda -->
                     <link rel="stylesheet" href="assets/styles/container/01-quadro/02-legenda/legenda.css">
@@ -51,6 +58,10 @@
             <h1 class="cabecalho__titulo">Pedra • Papel • Tesoura</h1>
         </header>
         <div class="quadro"><!-- 01-QUADRO/../ -->
+            <div class="modal"><!-- MODAL -->
+                <h2 class="modal__titulo"></h2>
+                <button class="modal__botao">continuar</button>
+            </div>
             <div class="placar"><!-- 00-PLACAR/ -->
                 <h2 class="placar__titulo">
                     <span class="placar__pontos-0">0</span>:<span class="placar__pontos-1">0</span>
@@ -78,9 +89,9 @@
                 </div>
                 <div class="jogador"><!-- 02-JOGADOR/ -->
                     <div class="jogador__quadro">
-                        <img class="cartao pedra" src="assets/images/pedra.jpg" alt="">
-                        <img class="cartao papel" src="assets/images/papel.jpg" alt="">
-                        <img class="cartao tesoura" src="assets/images/tesoura.jpg" alt="">
+                        <div class="cartao pedra"></div>
+                        <div class="cartao papel"></div>
+                        <div class="cartao tesoura"></div>
                     </div>
                     <div class="jogador__img avatar"></div>
                     <div class="icone__direitos">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
@@ -91,5 +102,6 @@
             </div>
         </div>
     </div>
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>
