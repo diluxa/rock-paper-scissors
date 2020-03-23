@@ -12,6 +12,18 @@ modalBotao = document.querySelector('.modal__botao');
 
 placar = [0,0];
 
+function cartoesInativos() {
+    cartaoPedra.style.pointerEvents = 'none';
+    cartaoPapel.style.pointerEvents = 'none';
+    cartaoTesoura.style.pointerEvents = 'none';
+}
+
+function cartoesAtivos() {
+    cartaoPedra.style.pointerEvents = 'initial';
+    cartaoPapel.style.pointerEvents = 'initial';
+    cartaoTesoura.style.pointerEvents = 'initial';
+}
+
 modalBotao.addEventListener('click',function() {
     modal.classList.toggle('ativo');//remove classe .ativo configurada com transform para dar efeito de aparição
     cartaoMaquina.classList.remove('ativo');//remove classe .ativo configurada com transform para dar efeito de rotação
@@ -20,6 +32,7 @@ modalBotao.addEventListener('click',function() {
     cartaoTesoura.classList.remove('ativo');//remove classe .ativo configurada com transform para dar efeito de rotação
     cartaoMaquina.style.backgroundImage = "url(assets/images/icon.svg)";
     modalBotao.style.pointerEvents = "none";//retira função de clique do botão
+    cartoesAtivos();
 })
 
 cartaoPedra.addEventListener('click',function() {
@@ -32,16 +45,19 @@ cartaoPedra.addEventListener('click',function() {
     if(numeroAleatorio === 1) {
         cartaoMaquina.style.backgroundImage = "url(assets/images/pedra.jpg)";
         modal.classList.toggle('ativo');
+        cartoesInativos();
         modalTitulo.textContent = 'Empate';
     } else if(numeroAleatorio === 2) {
         cartaoMaquina.style.backgroundImage = "url(assets/images/papel.jpg)";
         modal.classList.toggle('ativo');
+        cartoesInativos();
         modalTitulo.textContent = 'Maquina ganhou';
         placar[1] += 1;
         placar1.textContent = placar[1];
     } else {
         cartaoMaquina.style.backgroundImage = "url(assets/images/tesoura.jpg)";
         modal.classList.toggle('ativo');
+        cartoesInativos();
         modalTitulo.textContent = 'Humano ganhou';
         placar[0] += 1;
         placar0.textContent = placar[0];
@@ -70,16 +86,19 @@ cartaoPapel.addEventListener('click',function() {
     if(numeroAleatorio === 1) {
         cartaoMaquina.style.backgroundImage = "url(assets/images/pedra.jpg)";
         modal.classList.toggle('ativo');
+        cartoesInativos();
         modalTitulo.textContent = 'Humano ganhou';
         placar[0] += 1;
         placar0.textContent = placar[0];
     } else if(numeroAleatorio === 2) {
         cartaoMaquina.style.backgroundImage = "url(assets/images/papel.jpg)";
         modal.classList.toggle('ativo');
+        cartoesInativos();
         modalTitulo.textContent = 'Empate';
     } else {
         cartaoMaquina.style.backgroundImage = "url(assets/images/tesoura.jpg)";
         modal.classList.toggle('ativo');
+        cartoesInativos();
         modalTitulo.textContent = 'Maquina ganhou';
         placar[1] += 1;
         placar1.textContent = placar[1];
@@ -108,18 +127,21 @@ cartaoTesoura.addEventListener('click',function() {
     if(numeroAleatorio === 1) {
         cartaoMaquina.style.backgroundImage = "url(assets/images/pedra.jpg)";
         modal.classList.toggle('ativo');
+        cartoesInativos();
         modalTitulo.textContent = 'Maquina ganhou';
         placar[1] += 1;
         placar1.textContent = placar[1];
     } else if(numeroAleatorio === 2) {
         cartaoMaquina.style.backgroundImage = "url(assets/images/papel.jpg)";
         modal.classList.toggle('ativo');
+        cartoesInativos();
         modalTitulo.textContent = 'Humano ganhou';
         placar[0] += 1;
         placar0.textContent = placar[0];
     } else {
         cartaoMaquina.style.backgroundImage = "url(assets/images/tesoura.jpg)";
         modal.classList.toggle('ativo');
+        cartoesInativos();
         modalTitulo.textContent = 'Empate';
     }
     if(placar.includes(5)) {
