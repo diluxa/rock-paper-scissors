@@ -12,6 +12,8 @@ modalBotao = document.querySelector('.modal__botao');
 
 placar = [0,0];
 
+///////~FUNCOES~////////
+
 function cartoesInativos() {
     cartaoPedra.style.pointerEvents = 'none';
     cartaoPapel.style.pointerEvents = 'none';
@@ -22,6 +24,22 @@ function cartoesAtivos() {
     cartaoPedra.style.pointerEvents = 'initial';
     cartaoPapel.style.pointerEvents = 'initial';
     cartaoTesoura.style.pointerEvents = 'initial';
+}
+
+function conferePlacar() {
+    if(placar.includes(5)) {
+        if(placar[0]===5) {
+            modalTitulo.innerHTML = "Boa cabeça de urso!<br>Você venceu.";
+            placar = [0,0];
+            placar0.textContent = placar[0];
+            placar1.textContent = placar[1];
+        } else if(placar[1]===5) {
+            modalTitulo.innerHTML = "Maquina venceu!<br>he-he-he";
+            placar = [0,0];
+            placar0.textContent = placar[0];
+            placar1.textContent = placar[1];
+        };
+    };
 }
 
 modalBotao.addEventListener('click',function() {
@@ -62,27 +80,15 @@ cartaoPedra.addEventListener('click',function() {
         placar[0] += 1;
         placar0.textContent = placar[0];
     }
-    if(placar.includes(5)) {
-        if(placar[0]===5) {
-            modalTitulo.innerHTML = "Boa cabeça de urso!<br>Você venceu.";
-            placar = [0,0];
-            placar0.textContent = placar[0];
-            placar1.textContent = placar[1];
-        } else if(placar[1]===5) {
-            modalTitulo.innerHTML = "Maquina venceu!<br>he-he-he";
-            placar = [0,0];
-            placar0.textContent = placar[0];
-            placar1.textContent = placar[1];
-        };
-    };
+    conferePlacar();
 })
 cartaoPapel.addEventListener('click',function() {
     numeroAleatorio = Math.floor(Math.random()*3+1);
     cartaoMaquina.classList.toggle('ativo');
-    modalBotao.style.pointerEvents = "initial";
     cartaoPapel.classList.toggle('ativo');
     cartaoPedra.classList.remove('ativo');
     cartaoTesoura.classList.remove('ativo');
+    modalBotao.style.pointerEvents = "initial";
     if(numeroAleatorio === 1) {
         cartaoMaquina.style.backgroundImage = "url(assets/images/pedra.jpg)";
         modal.classList.toggle('ativo');
@@ -103,27 +109,15 @@ cartaoPapel.addEventListener('click',function() {
         placar[1] += 1;
         placar1.textContent = placar[1];
     }
-    if(placar.includes(5)) {
-        if(placar[0]===5) {
-            modalTitulo.innerHTML = "Boa cabeça de urso!<br>Você venceu.";
-            placar = [0,0];
-            placar0.textContent = placar[0];
-            placar1.textContent = placar[1];
-        } else if(placar[1]===5) {
-            modalTitulo.innerHTML = "Maquina venceu!<br>he-he-he";
-            placar = [0,0];
-            placar0.textContent = placar[0];
-            placar1.textContent = placar[1];
-        };
-    };
+    conferePlacar()
 })
 cartaoTesoura.addEventListener('click',function() {
     numeroAleatorio = Math.floor(Math.random()*3+1);
     cartaoMaquina.classList.toggle('ativo');
-    modalBotao.style.pointerEvents = "initial";
     cartaoTesoura.classList.toggle('ativo');
     cartaoPedra.classList.remove('ativo');
     cartaoPapel.classList.remove('ativo');
+    modalBotao.style.pointerEvents = "initial";
     if(numeroAleatorio === 1) {
         cartaoMaquina.style.backgroundImage = "url(assets/images/pedra.jpg)";
         modal.classList.toggle('ativo');
@@ -144,17 +138,5 @@ cartaoTesoura.addEventListener('click',function() {
         cartoesInativos();
         modalTitulo.textContent = 'Empate';
     }
-    if(placar.includes(5)) {
-        if(placar[0]===5) {
-            modalTitulo.innerHTML = "Boa cabeça de urso!<br>Você venceu.";
-            placar = [0,0];
-            placar0.textContent = placar[0];
-            placar1.textContent = placar[1];
-        } else if(placar[1]===5) {
-            modalTitulo.innerHTML = "Maquina venceu!<br>he-he-he";
-            placar = [0,0];
-            placar0.textContent = placar[0];
-            placar1.textContent = placar[1];
-        };
-    };
+    conferePlacar();
 })
