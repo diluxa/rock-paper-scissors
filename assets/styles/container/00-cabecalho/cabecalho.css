@@ -1,5 +1,8 @@
 .cabecalho {
-    text-align: center;
+    /* espacamento */
     padding: 5px 0;
+    /* font */
+    text-align: center;
+    /* background */
     background-color: #423e37;
 }

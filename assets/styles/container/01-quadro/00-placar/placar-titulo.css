@@ -1,6 +1,9 @@
 .placar__titulo {
-    border: 2px solid #252422;
+    /* espacamento */
     padding: 3px 50px;
-    border-radius: 50px;
+    /* background */
     background-color: #cee7e6;
+    /* borda */
+    border: 2px solid #252422;
+    border-radius: 50px;
 }

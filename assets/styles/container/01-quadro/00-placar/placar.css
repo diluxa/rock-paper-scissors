@@ -1,5 +1,8 @@
 .placar {
-    color: #252422;
+    /* espacamento */
     margin: 10px 0;
+    /* position */
     position: relative;
+    /* font */
+    color: #252422;
 }

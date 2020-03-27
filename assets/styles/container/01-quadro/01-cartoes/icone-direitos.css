@@ -1,10 +1,13 @@
 .icone__direitos {
+    /* font */
+    color: #252422;
     font-size: 0.6rem;
     text-align: center;
+    /* espacamento */
     margin: 3px 0;
-    color: #252422;
 }
 .icone__direitos a {
-    text-decoration: none;
+    /* font */
     color: #c24d1f;
+    text-decoration: none;
 }

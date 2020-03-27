@@ -1,5 +1,7 @@
 .versus {
-    font-family: 'Press Start 2P', cursive !important; 
+    /* espacamento */
     margin: 10px 0;
+    /* font */
     color: #252422;
+    font-family: 'Press Start 2P', cursive !important; 
 }

@@ -1,5 +1,6 @@
 .cabecalho__titulo {
-    text-transform: uppercase;
-    font-size: 1.4rem;
+    /* font */
     color: #e3b23c;
+    font-size: 1.4rem;
+    text-transform: uppercase;
 }

@@ -1,16 +1,26 @@
 .modal {
+    /* tamanho */
     width: 200px;
-    position: absolute;
-    background-color: rgb(253, 193, 203);
-    border: 2px solid rgb(216, 133, 147);
+    /* espacamento */
     padding: 5px 0;
+    /* borda */
+    border: 2px solid rgb(216, 133, 147);
+    /* font */
+    text-align: center;
+    /* position */
+    position: absolute;
+    /* display */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    text-align: center;
+    /* background */
+    background-color: rgb(253, 193, 203);
+    /* opcatiy */
     opacity: 0;
+    /* index */
     z-index: 1;
+    /* transition */
     transition: opacity 1.3s;
     transition-timing-function: cubic-bezier(1,0,0,1);
 }

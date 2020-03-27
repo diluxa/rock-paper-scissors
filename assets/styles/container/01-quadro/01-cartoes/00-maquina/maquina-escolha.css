@@ -1,6 +1,9 @@
 .maquina__escolha {
+    /* espacamento */
     margin: 10px auto;
+    /* background */
     background-image: url(../../../../../images/icon.svg);
+    /* transition */
     transition: transform 1s, background-image 1s;
     transition-timing-function: ease, cubic-bezier(0.8, 0, 0, 5);
 }

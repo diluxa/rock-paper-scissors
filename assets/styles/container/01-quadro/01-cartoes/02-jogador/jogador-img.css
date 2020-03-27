@@ -1,4 +1,6 @@
 .jogador__img {
-    background-image: url(../../../../../images/user.svg);
+    /* espacamento */
     margin: 0 auto;
+    /* background */
+    background-image: url(../../../../../images/user.svg);
 }

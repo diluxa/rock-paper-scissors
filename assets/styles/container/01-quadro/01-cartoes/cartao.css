@@ -1,13 +1,19 @@
 .cartao {
+    /* tamanho */
     width: 70px;
     height: 70px;
-    border: 2px solid black;
-    background-color: #fff;
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+    /* espacamento */
     margin: 10px 2px;
+    /* borda */
+    border: 2px solid black;
+    /* background */
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    /* shadow */
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+    /* transition */
     transition: transform 1s;
 }
 .cartao.ativo {

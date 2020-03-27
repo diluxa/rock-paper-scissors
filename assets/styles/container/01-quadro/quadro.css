@@ -1,9 +1,13 @@
 .quadro {
+    /* tamanho */
+    height: 90%;
+    /* position */
+    position: relative;
+    /* dislay */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background */
     background-color: #e7d7c1;
-    height: 90%;
-    position: relative;
 }

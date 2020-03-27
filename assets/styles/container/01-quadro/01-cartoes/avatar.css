@@ -1,6 +1,8 @@
 .avatar {
+    /* tamanho */
     width: 70px;
     height: 70px;
+    /* background */
     background-position: center;
     background-size: cover;
 }

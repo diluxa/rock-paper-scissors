@@ -1,5 +1,7 @@
 .modal__titulo {
-    font-size: 0.9rem;
+    /* espacamento */
     margin-bottom: 5px;
+    /* font */
     color: #252422;
+    font-size: 0.9rem;
 }

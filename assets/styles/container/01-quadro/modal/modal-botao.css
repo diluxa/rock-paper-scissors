@@ -1,11 +1,18 @@
 .modal__botao {
-    background-color:#fff;
-	border:1px solid #252422;
-	cursor:pointer;
-	color: #252422;
-	font-size:17px;
+    /* espacamento */
     padding:3px 5px;
+    /* borda */
+    border:1px solid #252422;
+    /* font */
+	color: #252422;
+    /* background */
+    background-color:#fff;
+    /* cursor */
+    cursor:pointer;
+    font-size:17px;
+    /* outline */
     outline-color: initial;
+    /* pointer */
     pointer-events: none;
 }
 .modal__botao:active {

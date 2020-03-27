@@ -1,4 +1,6 @@
 .maquina__img {
-    background-image: url(../../../../../images/android.svg);
+    /* espacamento */
     margin: 0 auto;
+    /* background */
+    background-image: url(../../../../../images/android.svg);
 }
