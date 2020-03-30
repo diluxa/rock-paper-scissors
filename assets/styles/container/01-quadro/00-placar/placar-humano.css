@@ -1,7 +1,7 @@
 .placar__humano {
     /* espacamento */
     padding: 2px;
-    /* position */
+    /* absolute */
     position: absolute;
     left: 0;
     top: 0;

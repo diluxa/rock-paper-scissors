@@ -1,9 +1,9 @@
 .quadro {
     /* tamanho */
     height: 90%;
-    /* position */
+    /* relative */
     position: relative;
-    /* dislay */
+    /* flex */
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -14,8 +14,15 @@
     /* shadow */
     box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
     /* transition */
+    -moz-transition: transform 1s;
+    -webkit-transition: transform 1s;
     transition: transform 1s;
 }
 .cartao.ativo {
+    -moz-transform: scale(1.2) rotateY(180deg);
+    -webkit-transform: scale(1.2) rotateY(180deg);
     transform: scale(1.2) rotateY(180deg);
+}
+.cartao:not(.maquina__escolha){
+    cursor: pointer;
 }

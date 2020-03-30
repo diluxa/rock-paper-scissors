@@ -4,6 +4,10 @@
     /* background */
     background-image: url(../../../../../images/icon.svg);
     /* transition */
+    -moz-transition: transform 1s, background-image 1s;
+    -webkit-transition: transform 1s, background-image 1s;
     transition: transform 1s, background-image 1s;
+    -moz-transition-timing-function: ease, cubic-bezier(0.8, 0, 0, 5);
+    -webkit-transition-timing-function: ease, cubic-bezier(0.8, 0, 0, 5);
     transition-timing-function: ease, cubic-bezier(0.8, 0, 0, 5);
 }

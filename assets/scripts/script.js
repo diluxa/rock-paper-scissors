@@ -12,8 +12,6 @@ modalBotao = document.querySelector('.modal__botao');
 
 placar = [0,0];
 
-///////~FUNCOES~////////
-
 function cartoesInativos() {
     cartaoPedra.style.pointerEvents = 'none';
     cartaoPapel.style.pointerEvents = 'none';
@@ -43,23 +41,23 @@ function conferePlacar() {
 }
 
 modalBotao.addEventListener('click',function() {
-    modal.classList.toggle('ativo');//remove classe .ativo configurada com transform para dar efeito de aparição
-    cartaoMaquina.classList.remove('ativo');//remove classe .ativo configurada com transform para dar efeito de rotação
-    cartaoPedra.classList.remove('ativo');//remove classe .ativo configurada com transform para dar efeito de rotação
-    cartaoPapel.classList.remove('ativo');//remove classe .ativo configurada com transform para dar efeito de rotação
-    cartaoTesoura.classList.remove('ativo');//remove classe .ativo configurada com transform para dar efeito de rotação
+    modal.classList.toggle('ativo');
+    cartaoMaquina.classList.remove('ativo');
+    cartaoPedra.classList.remove('ativo');
+    cartaoPapel.classList.remove('ativo');
+    cartaoTesoura.classList.remove('ativo');
     cartaoMaquina.style.backgroundImage = "url(assets/images/icon.svg)";
-    modalBotao.style.pointerEvents = "none";//retira função de clique do botão
+    modalBotao.style.pointerEvents = "none";
     cartoesAtivos();
 })
 
 cartaoPedra.addEventListener('click',function() {
     numeroAleatorio = Math.floor(Math.random()*3+1);
-    cartaoMaquina.classList.toggle('ativo');//add classe .ativo configurada com transform para dar efeito de rotação
-    cartaoPedra.classList.toggle('ativo');//add classe .ativo configurada com transform para dar efeito de rotação
-    cartaoPapel.classList.remove('ativo');//remove classe .ativo das outras cartas
-    cartaoTesoura.classList.remove('ativo');//remove classe .ativo das outras cartas
-    modalBotao.style.pointerEvents = "initial";//libera função de clique do botao
+    cartaoMaquina.classList.toggle('ativo');
+    cartaoPedra.classList.toggle('ativo');
+    cartaoPapel.classList.remove('ativo');
+    cartaoTesoura.classList.remove('ativo');
+    modalBotao.style.pointerEvents = "initial";
     if(numeroAleatorio === 1) {
         cartaoMaquina.style.backgroundImage = "url(assets/images/pedra.jpg)";
         modal.classList.toggle('ativo');
